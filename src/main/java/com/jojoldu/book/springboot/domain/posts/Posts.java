@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter // 클래스 내 모든 필드의 Getter 메소드를 자동생성
 @NoArgsConstructor // 기본 생성자 자동 추가 = public Posts(){}
 @Entity // 테이블과 링크될 클래스임을 나타낸다. 보통 이런 클래스를 Entity 클래스라고 부른다.
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // 헤당 테이블의 PK 필드를 나타냄
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK의 생성규칙을 나타냄 GenerationType.Identity 옵션을 추가해야만 auto_increment가 된다(스프링부터2.0). + Entity의 PK는 long 타입의 Auto_invrement를 추천
