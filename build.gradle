@@ -35,6 +35,8 @@ dependencies {
 
     compile('com.h2database:h2') // 인메모리 관계형 데이터베이스 프로젝트의존성만으로 관리할 수 있음 , JPA 테스트 용도로 쓰임
 
+    compile('org.springframework.boot:spring-boot-starter-mustache') // 스프링부트에서 지원하는 mustache
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
 }
