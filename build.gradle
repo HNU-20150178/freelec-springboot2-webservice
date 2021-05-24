@@ -37,6 +37,8 @@ dependencies {
 
     compile('org.springframework.boot:spring-boot-starter-mustache') // 스프링부트에서 지원하는 mustache
 
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client') // oauth2-client와 -jose를 기본으로 관리해줌
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
 }
